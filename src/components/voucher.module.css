@@ -1,11 +1,78 @@
 .root {
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+}
+
+.voucher {
   border-radius: 1.6rem;
-  -webkit-box-shadow: 0px 5px 15px -2px #9C3587;
-  box-shadow: 0px 5px 15px -2px #9C3587;
+  border-color: #9c3587;
+  border: solid #9c3587;
+  border-width: 2px;
+  -webkit-box-shadow: 0px 5px 15px -2px #9c3587;
+  box-shadow: 0px 5px 15px -2px #9c3587;
   display: flex;
   flex-direction: column;
+  align-items: left;
+  width: 90%;
+}
+
+.text {
+  color: #9c3587;
+  font-size: 7vw;
+  margin: 0;
+  padding: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.logo1 {
+  max-width: 30%;
+  height: auto;
+  margin-left: 0.5vw;
+  padding: 1.5rem;
+}
+
+.logo2 {
+  max-width: 45%;
+  height: auto;
+  padding: 1.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.btm {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: 0;
+  background-color: #9c3587;
+  margin-bottom: 1.5rem;
+  width: 40vw;
+  height: 5vh;
   align-items: center;
-  margin: 1rem;
-  padding: 1rem;
-  width: 80%;
+}
+
+.subtext1 {
+  text-align: right;
+  margin-right: 5vw;
+  margin-left: 5vw;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.subtext2 {
+  margin: 0;
+  text-align: right;
+  color: white;
+  font-size: 10px;
+}
+
+.bar {
+  background-color: #9c3587;
+  height: 15px;
+  margin-bottom: 2.5vh;
 }
