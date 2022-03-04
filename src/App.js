@@ -5,7 +5,7 @@ import Wallet from "../src/pages/wallet"
 
 function App() {
   return (
-    <Wallet></Wallet>
+    <LandingPage></LandingPage>
   );
 }
 

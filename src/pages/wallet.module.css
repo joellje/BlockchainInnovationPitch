@@ -1,7 +1,24 @@
 .root{
-    font-size: 50px;
-    background-color: aqua;
+    background-color: #EC8FAB;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
-.text{
-
+.logo{
+    height:10vh;
+    top:'5%';
+    position: 'absolute';
+}
+.wallet{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    top:'50%';
+    position: 'absolute';
+}
+.footer{
+    position:absolute;
+    bottom:0;
+    height: 20vh;
 }
