@@ -1,7 +1,7 @@
 import React from "react";
 import classes from "./walletPage.module.css";
 import logo from "../assets/nftuc.png";
-import wallet from "../assets/walletlogo.png";
+import wallet from "../assets/wallet.png"
 import background from "../assets/background.png";
 
 export default function walletPage() {

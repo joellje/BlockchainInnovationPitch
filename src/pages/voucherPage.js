@@ -1,7 +1,6 @@
 import React from "react";
 import classes from "./voucherPage.module.css";
 import logo from "../assets/nftuc.png";
-import wallet from "../assets/walletlogo.png";
 import background from "../assets/background.png";
 import Voucher from "../components/voucher";
 
