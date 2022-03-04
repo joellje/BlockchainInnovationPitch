@@ -19,7 +19,7 @@
     display: inline;
     margin-left: 60%;
     font-size: 50px;
-    font-family: 'Times New Roman', Times, serif, sans-serif;
+    font-family: 'Roboto', sans-serif;
 
 }
 .body{
@@ -31,6 +31,7 @@
     z-index: -1;
     width:30%;
     margin-left: 75%;
+    display: inline;
 }
 .party{
     position: absolute;
