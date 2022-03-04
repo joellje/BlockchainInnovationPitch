@@ -12,8 +12,11 @@ export default function walletPage() {
         {/* NFT logo*/}
 
         <img src={logo} className={classes.logo} />
-
-        <Voucher />
+        <div className={classes.vouchers}>
+          <Voucher />
+          <Voucher />
+          <Voucher />
+        </div>
 
         {/*Footer */}
         <img src={background} className={classes.footer}></img>
