@@ -4,7 +4,7 @@ import logo from "../assets/nftuc.png";
 import wallet from "../assets/wallet.png"
 import background from "../assets/background.png";
 
-export default function walletPage() {
+export default function WalletPage() {
   return (
     <div className={classes.root}>
       {/* NFT logo*/}

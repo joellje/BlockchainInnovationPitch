@@ -1,25 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import classes from "./voucherPage.module.css";
 import logo from "../assets/nftuc.png";
-import background from "../assets/background.png";
-import Voucher from "../components/voucher";
+import Voucher from "../components/Voucher";
+import Modal from "../components/modal";
 
-export default function walletPage() {
+export default function WalletPage() {
+  const [modal, setModal] = useState(false);
+  const toggleModal = () => {
+    setModal(true);
+    console.log("hi");
+  };
   return (
     <div>
       <div className={classes.root}>
         {/* NFT logo*/}
 
         <img src={logo} className={classes.logo} />
-        <div className={classes.vouchers}>
-          <Voucher />
-          <Voucher />
-          <Voucher />
-          <Voucher />
+        {modal ? <Modal modalHandler={setModal} /> : <></>}
+        <div className={classes.vouchers} onClick={toggleModal}>
+          <Voucher toggleModal={toggleModal} />
         </div>
-
-        {/*Footer */}
-        <img src={background} className={classes.footer}></img>
       </div>
     </div>
   );

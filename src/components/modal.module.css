@@ -1,0 +1,26 @@
+.root {
+  z-index: 100;
+  position: absolute;
+  border-radius: 0.8rem;
+  background-color: white;
+  box-shadow: #9c3587 0px 3px 5px, #9c3587 0px 3px 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30vh;
+  height: 30vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.qr {
+  width: 50vw;
+  margin-bottom: 3vh;
+}
+
+.close {
+  align-self: flex-end;
+  margin-right: 5vw;
+}

@@ -2,7 +2,7 @@ import "./App.css";
 import React from "react";
 import LandingPage from "../src/pages/landingPage";
 import WalletPage from "./pages/walletPage";
-import VoucherPage from "../src/pages/voucherPage";
+import VoucherPage from "../src/pages/VoucherPage";
 
 import {
   BrowserRouter as Router,

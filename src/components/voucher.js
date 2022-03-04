@@ -1,11 +1,12 @@
-import React from "react";
+import React, {useState} from "react";
 import classes from "./voucher.module.css";
 import ntuc from "../assets/NTUC.png";
 import nftuc from "../assets/nftuc.png";
 
-export default function voucher() {
+export default function Voucher(props) {
+  
   return (
-    <div className={classes.root}>
+    <div className={classes.root} onClick={props.toggleModal}>
       <div className={classes.voucher}>
         <div className={classes.header}>
           <h1 className={classes.text}>Voucher #1355</h1>
