@@ -5,7 +5,6 @@ import gift from "../assets/giftEmoji.png"
 import party from "../assets/party.png"
 export default function landingPage() {
   return (
-<<<<<<< HEAD
     <div className="mainpage">
         <div className="pseudobar">
           <span className="logoholder">
@@ -21,11 +20,6 @@ export default function landingPage() {
         <div className="party">
           <img className="partyimg" src={party}/>
         </div>
-=======
-
-    <div>
-        hi
->>>>>>> 477eb873fd8c855c1201a049ca7d25700e433d31
     </div>
   );
 }
