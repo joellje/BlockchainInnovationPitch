@@ -1,10 +1,9 @@
-import "./landingPage.css"
+import React from "react";
 
-const landingPage = () => {
-    return (
-        "uwu"
-    )
-
+export default function landingPage() {
+  return (
+    <div>
+        hi
+    </div>
+  );
 }
-
-export default landingPage()

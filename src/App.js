@@ -1,10 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import LandingPage from "../src/pages/landingPage"
+import Wallet from "../src/pages/wallet"
 
 function App() {
   return (
-    <div className="App">
-    </div>
+    <Wallet></Wallet>
   );
 }
 
