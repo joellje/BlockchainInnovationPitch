@@ -16,6 +16,7 @@ export default function walletPage() {
           <Voucher />
           <Voucher />
           <Voucher />
+          <Voucher />
         </div>
 
         {/*Footer */}

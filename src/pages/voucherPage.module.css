@@ -1,21 +1,23 @@
-.root{
-    background-color: #EC8FAB;
-    height: 100vh;
-    overflow-x: hidden;
-    /* overflow-y: hidden; */
+.root {
+  background-color: #ec8fab;
+  height: 100vh;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* overflow-y: hidden; */
 }
-.logo{
-    height:10vh;
-    top:5%;
-    position: 'absolute';
+.logo {
+  width: 50vw;
+  margin: 5%;
 }
-.footer{
-    position:absolute;
-    bottom:0;
-    height: 20vh;
+.footer {
+  position: absolute;
+  bottom: 0;
+  height: 20vh;
 }
 
-.vouchers{
-    max-height: 80vh;
-    overflow-y: scroll;
+.vouchers {
+  max-height: 80vh;
+  overflow-y: scroll;
 }
