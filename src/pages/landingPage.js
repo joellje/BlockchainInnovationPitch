@@ -10,6 +10,8 @@ import ss from "../assets/Shengshiong.png"
 import ntuc from "../assets/NTUC.png"
 import kfc from "../assets/kfc.png"
 import cs from "../assets/coldstorage.png"
+const { ethers } = require("ethers");
+
 export default function LandingPage() {
   const [selector, setSelector] = useState(0)
   const [provider, setProvider] = useState();

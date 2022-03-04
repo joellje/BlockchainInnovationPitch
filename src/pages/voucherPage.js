@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import classes from "./voucherPage.module.css";
 import logo from "../assets/nftuc.png";
 import background from "../assets/background.png";
-import Voucher from "../components/voucher";
+import Voucher from "../components/Voucher";
 import axios from 'axios';
 import Modal from "../components/modal";
 const { ethers } = require("ethers");
