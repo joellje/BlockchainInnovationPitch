@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "./wallet.module.css";
+import classes from "./voucherPage.module.css";
 import Voucher from "../components/voucher";
 
 export default function wallet() {

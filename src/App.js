@@ -1,8 +1,8 @@
 import "./App.css";
 import React from "react";
 import LandingPage from "../src/pages/landingPage";
-import Wallet from "../src/pages/walletlanding";
-import Voucher from "../src/pages/wallet";
+import WalletPage from "./pages/walletPage";
+import VoucherPage from "../src/pages/voucherPage";
 
 import {
   BrowserRouter as Router,
@@ -16,8 +16,8 @@ function App() {
     <Router>
       <Routes>
         <Route exact path="/landing" element={<LandingPage />} />
-        <Route exact path="/wallet" element={<Wallet />} />
-        <Route exact path="/vouchers" element={<Voucher />} />
+        <Route exact path="/wallet" element={<WalletPage />} />
+        <Route exact path="/vouchers" element={<VoucherPage />} />
         <Route path="/*" element={<Navigate to="/landing" />} />
       </Routes>
     </Router>

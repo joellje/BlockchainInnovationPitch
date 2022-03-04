@@ -1,10 +1,10 @@
 import React from "react";
-import classes from "./wallet.module.css";
+import classes from "./walletPage.module.css";
 import logo from "../assets/nftuc.png";
 import wallet from "../assets/walletlogo.png"
 import background from "../assets/background.png"
 
-export default function walletlanding() {
+export default function walletPage() {
   return (
     <div className={classes.root}>
 
