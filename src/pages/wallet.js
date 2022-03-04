@@ -1,11 +1,12 @@
 import React from "react";
 import classes from "./wallet.module.css";
+import Voucher from "../components/voucher";
 
 export default function wallet() {
   return (
-    <div className={classes.root}>
-        hELLo
-        <p className={classes.text}></p>
+    <div>
+      <div className={classes.root}>hELLo</div>
+      <Voucher/>
     </div>
   );
 }
