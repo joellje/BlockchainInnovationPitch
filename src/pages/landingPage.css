@@ -1,45 +1,231 @@
-.mainpage{
-    background-color: #EC8FAB;
-    height: 100vh;
-    overflow-x: hidden;
-    overflow-y: hidden;
+.mainpage {
+  background-color: #ec8fab;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
-.pseudobar{
-    padding-top: 3%;
-    height: 10vh;
+.pseudobar {
+  padding-top: 5%;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
-.logo{
-    height: 100%;
+.logo {
+  height: 100%;
 }
-.logoholder{
-    margin-left: 10%;
+.logoholder {
+  height: 100%;
+  margin-left: 5%;
 }
-.social{
-    color: white;
-    display: inline;
-    margin-left: 60%;
-    font-size: 50px;
+.social {
+  display: inline;
+  margin-left: 65vw;
+  height: 100%;
+}
+.socialbutt {
+  height: 100%;
+}
+.socialbutt:hover {
+  cursor: pointer;
+}
+.body {
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  padding-left: 0;
+}
+
+.party {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 0;
+  margin-right: 0;
+}
+.partyimg {
+  width: 100vw;
+  height: 15vh;
+}
+
+.wallet {
+  display: inline;
+  margin-left: 2%;
+  height: 100%;
+}
+
+.walletbutt {
+  margin-top: 1%;
+  height: 112%;
+}
+.walletbutt:hover {
+  cursor: pointer;
+}
+.mint{
+    width:300px;
+    height: 110px;
+    background-color: #653780;
+    border: none;
+    border-radius: 50px;
+    text-align: center;
+    padding-top:50px;
     font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    color: #F89F5B;
+
 
 }
-.body{
-    margin-top: 20vh;
-    display: inline;
+.mint:hover {
+  background-color: #2f0846;
+  cursor: pointer;
 }
-.gift{
-    margin-top: 10vh;
-    z-index: -1;
-    width:30%;
-    margin-left: 75%;
-    display: inline;
+
+.gift {
+  margin-left: 0;
 }
-.party{
-    position: absolute;
-    bottom:0;
-    margin-bottom: 0;
-    margin-right: 0;
+.gift:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 1s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
 }
-.partyimg{
-    width: 100vw;
-    height: 20vh;
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+.panel {
+  height: 500px;
+  width: 150px;
+  background-color: #653780;
+  margin-right: 16%;
+  align-self: flex-start;
+  z-index: 2;
+}
+.panel{
+    height: 510px;
+    width: 150px;
+    background-color: #653780;
+    margin-right: 16%;
+    align-self: flex-start;
+    z-index: 2;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box{
+    margin-top: 15%;
+    height:19%;
+    background-color: white;
+    width: 85%;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.box:hover{
+    cursor: pointer;
+    background-color: rgb(200, 42, 214);
+}
+.box:active{
+    background-color: #9C3587;
+}
+.box-bottom{
+    margin-top: 17%;
+    margin-bottom: 5%;
+    height:19%;
+    background-color: white;
+    width: 85%;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.box-bottom:hover{
+    cursor: pointer;
+    background-color: rgb(200, 42, 214);
+}
+.box-bottom:active{
+    background-color: #9C3587;
+}
+.small{
+    width: 90%;
+}
+.smallheight{
+    height: 90%;
+}
+.selected{
+    margin-top: 15%;
+    height:19%;
+    background-color: #9C3587;
+    width: 85%;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.selected-bottom{
+    margin-top: 17%;
+    margin-bottom: 5%;
+    height:19%;
+    background-color: #9C3587;
+    width: 85%;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.mintholder{
+    margin-right: 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.centerlogo{
+    width: 250px;
+    margin-bottom: 25px;
+}
+.centerlogoheight{
+    height: 100px;
+    margin-bottom: 25px;
 }

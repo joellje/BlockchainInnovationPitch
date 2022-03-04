@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import classes from "./voucherPage.module.css";
+import logo from "../assets/nftuc.png";
+import background from "../assets/background.png";
 import Voucher from "../components/voucher";
 import axios from 'axios';
 const { ethers } = require("ethers");
@@ -692,10 +694,22 @@ export default function VoucherPage() {
      fetchData();
   }, []);
 
-
   return (
     <div>
-      <Voucher/>
+      <div className={classes.root}>
+        {/* NFT logo*/}
+
+        <img src={logo} className={classes.logo} />
+        <div className={classes.vouchers}>
+          <Voucher />
+          <Voucher />
+          <Voucher />
+          <Voucher />
+        </div>
+
+        {/*Footer */}
+        <img src={background} className={classes.footer}></img>
+      </div>
     </div>
   );
 }

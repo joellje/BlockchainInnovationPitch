@@ -1,24 +1,74 @@
-.root{
-    background-color: #EC8FAB;
-    height: 100vh;
-    overflow-x: hidden;
-    overflow-y: hidden;
+.root {
+  background-color: #ec8fab;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.logo{
-    height:10vh;
-    top:5%;
-    position: 'absolute';
+.logo {
+  width: 50vw;
+  margin: 5%;
 }
-.wallet{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    margin-top:50%;
-    position: 'absolute';
+.footer {
+  height: 20vh;
+  bottom: 0;
+  position: absolute;
 }
-.footer{
-    position:absolute;
-    bottom:0;
-    height: 20vh;
+
+:root {
+  --drop-height: 150px;
+  --logo-size: 100px;
+  --offset: 100px;
+  --shadow-height: 20px;
+}
+.shadow {
+  width: var(--logo-size);
+  height: var(--shadow-height);
+  margin-top: 13vh;
+  background: radial-gradient(
+    50% 50%,
+    rgba(150, 150, 150, 1),
+    rgba(150, 150, 150, 0.05)
+  );
+  top: calc(
+    var(--offset) + var(--drop-height) + var(--logo-size) - 1.5 *
+      var(--shadow-height)
+  );
+  left: calc(50% - var(--logo-size) / 2);
+
+  animation-name: grow;
+  animation-duration: 0.5s;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+  animation-iteration-count: infinite;
+}
+@keyframes grow {
+  from {
+    transform: scale(0.2, 0.5);
+  }
+
+  to {
+    transform: scale(1.5, 0.8);
+  }
+}
+
+.wallet {
+  margin-top: 10vh;
+  width: 50%;
+  top: var(--offset);
+  left: calc(50% - var(--logo-size) / 2);
+  animation-name: bounce;
+  animation-duration: 0.5s;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+  animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0) scale(1);
+  }
+  to {
+    transform: translateY(var(--drop-height)) scale(1, 0.7);
+  }
 }
