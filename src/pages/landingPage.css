@@ -1,0 +1,44 @@
+.mainpage{
+    background-color: #EC8FAB;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.pseudobar{
+    padding-top: 3%;
+    height: 10vh;
+}
+.logo{
+    height: 100%;
+}
+.logoholder{
+    margin-left: 10%;
+}
+.social{
+    color: white;
+    display: inline;
+    margin-left: 60%;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+
+}
+.body{
+    margin-top: 20vh;
+    display: inline;
+}
+.gift{
+    margin-top: 10vh;
+    z-index: -1;
+    width:30%;
+    margin-left: 75%;
+}
+.party{
+    position: absolute;
+    bottom:0;
+    margin-bottom: 0;
+    margin-right: 0;
+}
+.partyimg{
+    width: 100vw;
+    height: 20vh;
+}
