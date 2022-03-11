@@ -1,15 +1,7 @@
-# Basic Sample Hardhat Project
+# NFTUC
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+This project is to create a Voucher ecosystem which increases the utility of vouchers while ensuring they are used.
+Vouchers are minted as NFTs from the companies, which can be tracked on chain and kept digitally by the customer. 
+This Provides clear analytics for voucher effectiveness
+There is also a Gachapon/ Loot Box element. This gives the user a chance to get a better reward the more vouchers they use.
 
-Try running some of the following tasks:
-
-```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
-```
